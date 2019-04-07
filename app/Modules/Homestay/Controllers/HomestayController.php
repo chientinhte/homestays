@@ -28,14 +28,16 @@ class HomestayController extends Controller
 
     public function getHomestays(Request $request)
     {
-        $homestays = Homestay::query();
+        $homestays = Homestay::query()
+            ->leftJoin('gs_location as lc', 'gs_homestay_room.location_id', '=', 'lc.id');
 
         $homestay_types = explode('-', $request->homestay_types);
         $price = explode('-', $request->price);
         $orderBy = $request->orderBy;
-
+        $keySearch = $request->search;
+        $query_str = $request->query_str;
         if ($request->homestay_types) {
-            $homestays = $homestays->whereIn('homestay_type', $homestay_types);
+            $homestays = $homestays->whereIn('property_type', $homestay_types);
         }
         if ($request->price) {
             $homestays = $homestays->whereBetween('price', $price);
@@ -57,7 +59,24 @@ class HomestayController extends Controller
                 break;
         }
 
-        $homestays = $homestays->paginate(8);
+        if ($keySearch) {
+            if(!$query_str){
+                $homestays->where('gs_homestay_room.name', 'like', '%' . $keySearch . '%');
+            }else{
+                $homestays->Where('query_str', 'like', $query_str . '%');
+            }
+        }
+
+        $homestays = $homestays->select(
+            'gs_homestay_room.id',
+            'gs_homestay_room.name',
+            'gs_homestay_room.short_desc',
+            'property_type as homestay_type',
+            'rating',
+            'price',
+            'address',
+            'rating'
+        )->paginate(8);
         return $homestays;
     }
     public function getSuggestLocationHomestays(Request $request) {

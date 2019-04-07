@@ -1828,7 +1828,8 @@ __webpack_require__.r(__webpack_exports__);
       debounceTimeout: null,
       //Chống spam server
       loading: false,
-      cursor: -1
+      cursor: -1,
+      query_str: ''
     };
   },
   methods: {
@@ -1894,10 +1895,13 @@ __webpack_require__.r(__webpack_exports__);
     selectSuggestion: function selectSuggestion() {
       $('.suggest').hide();
       this.address = this.suggestions[this.cursor].name;
-      this.$emit('search', this.address);
+      this.query_str = this.suggestions[this.cursor].query_str;
+      console.log('search');
+      this.$emit('search', this.address, this.query_str);
     },
     searchHomestay: function searchHomestay() {
-      this.$emit('search', this.address);
+      console.log('search');
+      this.$emit('search', this.address, this.query_str);
     }
   },
   mounted: function mounted() {}
@@ -2006,7 +2010,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      homestays: null,
+      homestays: [{}],
       page: '',
       fetching: false,
       price: [0, 10000000],
@@ -2050,8 +2054,8 @@ __webpack_require__.r(__webpack_exports__);
     sort: function sort(sortKey) {
       this.orderByKeyUrl = '&orderBy=' + sortKey;
     },
-    setSearchUrl: function setSearchUrl(search) {
-      this.searchUrl = '&search=' + search;
+    setSearchUrl: function setSearchUrl(search, query_str) {
+      this.searchUrl = "&search=".concat(search, "&query_str=").concat(query_str);
     }
   },
   watch: {
@@ -2094,6 +2098,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -41132,7 +41142,7 @@ var render = function() {
             type: "text",
             "data-pop": "#suggest",
             "aria-describedby": "address",
-            placeholder: "Nhập địa điểm bạn muốn đi",
+            placeholder: "Nhập địa điểm hoặc tên homestay bạn muốn đi",
             name: "address",
             autocomplete: "off"
           },
@@ -41633,6 +41643,12 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
+      _c("div", { staticClass: "d-flex align-baseline my-2" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("span", { staticClass: "ml-1" }, [_vm._v(_vm._s(_vm.address))])
+      ]),
+      _vm._v(" "),
       _c(
         "div",
         { staticClass: "d-flex ml-auto" },
@@ -41666,6 +41682,14 @@ var staticRenderFns = [
             "https://cdn.luxstay.com/rooms/13640/medium/room_13640_122_1551771179.jpg"
         }
       })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "display-inline-block" }, [
+      _c("i", { staticClass: "fas fa-map-marker-alt" })
     ])
   }
 ]

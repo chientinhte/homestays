@@ -88,7 +88,7 @@
     components: {vueSlider},
     data(){
       return {
-        homestays: null,
+        homestays: [{}],
         page: '',
         fetching: false,
         price: [0, 10000000],
@@ -129,8 +129,8 @@
       sort(sortKey) {
         this.orderByKeyUrl = '&orderBy=' + sortKey
       },
-      setSearchUrl(search){
-        this.searchUrl = '&search='+search
+      setSearchUrl(search, query_str){
+        this.searchUrl = `&search=${search}&query_str=${query_str}`
       }
     },
     watch: {

@@ -3,7 +3,7 @@
         <form action="" @submit.prevent="searchHomestay">
             <input type="text" class="pop-trigger form-control"
                    data-pop="#suggest" aria-describedby="address"
-                   placeholder="Nhập địa điểm bạn muốn đi"
+                   placeholder="Nhập địa điểm hoặc tên homestay bạn muốn đi"
                    name="address"
                    autocomplete="off"
                    v-model="address"
@@ -62,6 +62,7 @@
       debounceTimeout: null, //Chống spam server
       loading: false,
       cursor: -1,
+      query_str:'',
     }),
     methods: {
       getSuggestLocationHomestays(search){
@@ -125,10 +126,13 @@
       selectSuggestion() {
         $('.suggest').hide();
         this.address = this.suggestions[this.cursor].name;
-        this.$emit('search', this.address)
+        this.query_str = this.suggestions[this.cursor].query_str;
+        console.log('search');
+        this.$emit('search', this.address, this.query_str)
       },
       searchHomestay(){
-        this.$emit('search', this.address)
+        console.log('search');
+        this.$emit('search', this.address, this.query_str)
       }
     },
     mounted(){
