@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ff9dd2-39fd-4bfb-8612-f2c165788726" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/atb_test.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Homestay/Controllers/HomestayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Homestay/Controllers/HomestayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Homestay/Models/Homestay.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Homestay/Models/Homestay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/FormSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/FormSearch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Homestay.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Homestay.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/cardHomestay.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/cardHomestay.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +31,32 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="78">
-                <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+              <first_editor relative-caret-position="180">
+                <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1136">
+              <caret line="41282" column="21" selection-start-line="41282" selection-start-column="10" selection-end-line="41282" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/laravel-vue-pagination/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="199">
+                <caret line="82" column="120" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="120" />
               </first_editor>
               <second_editor />
             </state>
@@ -76,6 +92,7 @@
       <find>.length</find>
       <find>map</find>
       <find>post-create-project-cmd</find>
+      <find>form-search</find>
     </findStrings>
     <replaceStrings>
       <replace>homestays</replace>
@@ -226,6 +243,34 @@
               <item name="ATB_test" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ATB_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATB_test" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ATB_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATB_test" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-vue-pagination" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ATB_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATB_test" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ATB_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATB_test" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ATB_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ATB_test" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -282,12 +327,12 @@
       <workItem from="1554606877388" duration="3753000" />
       <workItem from="1554611518613" duration="1328000" />
       <workItem from="1554621238333" duration="10869000" />
-      <workItem from="1554646672728" duration="18998000" />
+      <workItem from="1554646672728" duration="19246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37274000" />
+    <option name="totallyTimeSpent" value="37522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1148" height="688" extended-state="0" />
@@ -296,7 +341,7 @@
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17948718" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.25268817" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3673835" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -484,16 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/laravel-vue-pagination/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="390">
-            <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -518,11 +553,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1136">
+          <caret line="41282" column="21" selection-start-line="41282" selection-start-column="10" selection-end-line="41282" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/laravel-vue-pagination/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="199">
+            <caret line="82" column="120" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="120" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="78">
-            <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+          <first_editor relative-caret-position="180">
+            <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
           </first_editor>
           <second_editor />
         </state>

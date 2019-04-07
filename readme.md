@@ -18,9 +18,10 @@ cd homestays
 composer install
 copy .env.example .env
 ```
-Thiết lập Database, import file atb_test.sql đính kèm.
+Thiết lập Database, import file [atb_test.sql](https://github.com/chientinhte/homestays/blob/master/atb_test.sql) đính kèm.
 Cấu hình DB trong .env
-````
+
+```
 php artisan key:generate
 php artisan serve
 ```
