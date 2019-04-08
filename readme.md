@@ -16,7 +16,7 @@ Module chỉ đưa ra các trường chính của homestay.
 git clone https://github.com/chientinhte/homestays.git
 cd homestays
 composer install
-copy .env.example .env
+cp .env.example .env
 ```
 Thiết lập Database, import file [atb_test.sql](https://github.com/chientinhte/homestays/blob/master/atb_test.sql) đính kèm.
 Cấu hình DB trong .env
@@ -25,6 +25,7 @@ Cấu hình DB trong .env
 php artisan key:generate
 php artisan serve
 ```
+Vào link [http://127.0.0.1:8000](http://127.0.0.1:8000) để xem.
 
 
 
