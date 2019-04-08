@@ -7,7 +7,7 @@
 6. Phân trang, đếm số kết quả
 
 ## Note
-Db test, danh sách các khu vực chỉ có trong Hà Nội.
+Db test, danh sách các khu vực chỉ có trong Hà Nội. Thử search khu vực Hà Nội hoặc Hồ Tây.
 Module chỉ đưa ra các trường chính của homestay.
 
 ## Cài đặt
